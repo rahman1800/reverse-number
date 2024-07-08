@@ -1,14 +1,16 @@
+class ReverseNumber
 {
 public static void main(String args[])
 {
 int n=Integer.parseInt(args[0]);
-for(int i=1;i<=n;i++)
+int rev=0;
+int r;
+while(n>0)
 {
-for(int j=1;j<=i;j++)
-{
-System.out.print(i+"\t");
+r=n%10;
+rev=(rev*10)+r;
+n=n/10;
 }
-System.out.println();
-}
+System.out.println("Reverse number:"+rev);
 }
 }
